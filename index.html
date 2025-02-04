@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smartexpo2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script>
+  AOS.init();
+</script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbol s+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down" />
+    </head>
+</head>
+<body class="items-center ">
+    <header class="navbar fixed bg-transparent w-full top-0 z-50">
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-4">
+            <div class="flex items-center space-x-4">
+                <img class="w-11 cursor-pointer" src="foto/osis.png" alt="OSIS Logo">
+                <img class="w-12 cursor-pointer" src="foto/skolah.png" alt="School Logo">
+            </div>
+
+            <div class="flex items-center space-x-4"></div>
+                <a class="osis text-yellow-100 block text-center">OSIS24</a>
+                <div class="nav-links flex space-x-4">
+                    <audio autoplay loop id="audio" src="foto/lagu.mp3" type="audio/mpeg"></audio>
+                    <button onclick="toggleAudio()" class="text-yellow-100">🔊</button>
+                </div>
+                <script>
+                    function toggleAudio() {
+                        var audio = document.getElementById('audio');
+                        if (audio.paused) {
+                            audio.play();
+                        } else {
+                            audio.pause();
+                        }
+                    }
+                </script>
+    </header>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+    <div class="herosect bg items-center backdrop-blur-sm bg-[url(foto/bg.png)] bg-linear-to-b bg-top from-violet-500 to-fuchsia-500 bg-scroll h-screen ">
+
+        <div class="hero-content items-center text-wrap">
+            <p class=" block invtext text-white text-sm md:text-2xl">your are invited to...</p>
+            <h1 class="text text-5xl md:text-8xl text-white font-bold items-center text-center tracking-tighter">SMART EXPO 2025</h1>
+            <p class="future text-white text-6xl  text-center proportional-nums hyphens-manual">24&shy;VELLION</p>
+        <div class="scroll">
+            <p class="text-white text-center">scroll down</p> 
+            <div class=" flex justify-center">
+                <span class="material-symbols-outlined text-white">
+                    keyboard_arrow_down
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="quotes flex justify-center bg-[#15071b]">
+
+        <p class="quote text-white text-2xl text-center underline">"Celebrating Unity and Diversity"</p>
+
+    </div>
+
+    <div class="aboutsect bg-[#220d2b] items-center">
+        <div class="about-content items-center text-wrap">
+            <h1 class="text text-3xl text-white font-bold items-center text-center tracking-tighter">ABOUT</h1>
+            <p class="about text-white text-sm text-pretty text-center">SMART EXPO 2025 is an exciting annual event organized by OSIS of SMAN 3 Tondano, bringing together students, teachers,
+            and alumni for a day of exploration and celebration. This offline event will be held on February 5, 2025, at SMAN 3
+            Tondano.</p> 
+            <p class="about text-white text-sm text-pretty text-center">
+            The expo serves as a platform for extracurricular clubs to showcase their activities, talents, and achievements.
+            Visitors will have the opportunity to discover various student organizations, watch live performances, and participate
+            in interactive sessions.</p>
+
+            <p class="about text-white text-sm text-pretty text-center">
+            In addition to club exhibitions, SMART EXPO 2025 also features a bazaar where attendees can enjoy a variety of delicious
+            food and merchandise sold by students. It's a perfect chance to experience the vibrant school community while supporting
+            student initiatives.</p>
+            <p class="about text-white text-sm text-pretty text-center">
+            Come and be part of SMART EXPO 2025 – explore, engage, and enjoy! 🚀✨</p>
+        </div>
+    </div>
+    <div class="thebigday bg-[#c7bacc] items-center place-content-center">
+        <div class="bigday-content items-center text-wrap">
+            <h1 class="text text-4xl text-black font-bold items-center text-center tracking-tighter">THE BIG DAY</h1>
+            <p class="bigday text-black text-sm text-center">Date: February 5, 2025</p>
+            <p class="bigday text-black text-sm text-center">Time: 8:00 AM – 4:00 PM</p>
+            <p class="bigday text-black text-sm text-center ">Venue: SMAN 3 Tondano</p>
+        </div>
+        <div class="flex justify-center">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.7647132474194!2d124.91514485414524!3d1.3167701447225875!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32871385bd36a26f%3A0x215a323d403afc33!2sSMA%20N%203%20Tondano!5e0!3m2!1sid!2sid!4v1738521187224!5m2!1sid!2sid"
+                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="carousel bg-[#c7bacc]">
+        <p class="dokumentasi text-4xl text-black text-center">Last Year's Documentations</p>
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-1.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-2.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-3.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-4.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/docs/images/carousel/carousel-5.svg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+<div class="footer bg-[#15071b]">
+          <h1 class="text text-md text-white font-bold items-start tracking-tighter">CONTACT</h1>
+
+        <p class="contact text-white text-sm text-pretty">Jl. Raya Tondano-Watuliney, Tondano, Minahasa, North Sulawesi</p>
+        <p class="contact text-white text-sm text-pretty">Phone: +62 431 123456</p>
+        <p class="contact text-white text-sm text-pretty">Email: info@smartexpo2025.com</p>
+    </div>
+</div>
+ <p class="contact text-white text-sm text-pretty text-center">Email:
+
+</div>
+
+
+        </body>
+</html>
